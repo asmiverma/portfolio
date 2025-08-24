@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmi Verma ♡ Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-cursive {
+            font-family: 'Pacifico', cursive;
+        }
+        .cherry-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFC0CB' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .ribbon {
+            position: relative;
+            background: #ff85a2;
+            color: white;
+            padding: 0.5rem 2rem;
+            margin: 1rem auto;
+            display: inline-block;
+            text-align: center;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+        }
+        .ribbon::before, .ribbon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            border: 1.25em solid #ff5c8a;
+            width: 0;
+            height: 0;
+            z-index: -1;
+        }
+        .ribbon::before {
+            left: -2.5em;
+            border-right-width: 1.5em;
+            border-left-color: transparent;
+            transform: translateY(-50%);
+        }
+        .ribbon::after {
+            right: -2.5em;
+            border-left-width: 1.5em;
+            border-right-color: transparent;
+            transform: translateY(-50%);
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px) rotate(2deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .skill-tag {
+             background-color: #ffe4e1;
+             color: #db7093;
+             padding: 0.25rem 0.75rem;
+             border-radius: 9999px;
+             font-size: 0.875rem;
+             font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 text-gray-800 cherry-bg">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-cursive text-3xl text-pink-500">Asmi Verma</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-600 hover:text-pink-500 transition duration-300">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-pink-500 transition duration-300">Projects</a>
+                <a href="#publications" class="text-gray-600 hover:text-pink-500 transition duration-300">Publications</a>
+                <a href="#contact" class="bg-pink-400 text-white px-4 py-2 rounded-full hover:bg-pink-500 transition duration-300 shadow-sm">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-pink-500 text-2xl">
+                ♡
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90">
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-600 hover:bg-pink-100">About</a>
+            <a href="#projects" class="block py-2 px-4 text-sm text-gray-600 hover:bg-pink-100">Projects</a>
+            <a href="#publications" class="block py-2 px-4 text-sm text-gray-600 hover:bg-pink-100">Publications</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-600 hover:bg-pink-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-20">
+            <div class="relative inline-block">
+                 <span class="absolute top-0 left-0 -mt-4 -ml-4 text-4xl transform -rotate-12 opacity-70">🍒</span>
+                 <span class="absolute bottom-0 right-0 -mb-4 -mr-4 text-4xl transform rotate-12 opacity-70">🎀</span>
+                <img src="https://firebasestorage.googleapis.com/v0/b/gemini-canvas-prod.appspot.com/o/us-central1-shared-chat-155621.appspot.com%2F0%2F2024-08-24T06%3A08%3A43.896Z%2FWhatsApp%20Image%202025-08-17%20at%2022.42.55_8e415aa3.jpg-ccdbbd55-55fb-4ff5-a1cf-6ff46190e726?alt=media" alt="Asmi Verma" class="w-40 h-40 rounded-full object-cover mx-auto mb-6 border-4 border-white shadow-lg">
+            </div>
+            <h1 class="font-cursive text-5xl md:text-7xl text-pink-600 mb-4 leading-tight">Hey there,<br>I'm Asmi Verma!</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">A Data Science student passionate about finding insights and transforming raw data into visual stories.</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="ribbon font-cursive text-4xl">About Me</h2>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-2/3 text-gray-700 space-y-4">
+                    <p>Hello! I'm a Data Science undergraduate with hands-on experience in data analysis and dashboard development. I love diving into business and financial data to build real-world analytics projects.</p>
+                    <p>My goal is to blend analytical skills with clear, compelling design to make data understandable and beautiful. When I'm not working with data, I enjoy exploring new creative outlets!</p>
+                    <h3 class="font-bold text-pink-500 pt-4">My Toolkit:</h3>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">DAX</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">Data Modeling</span>
+                    </div>
+                     <a href="https://firebasestorage.googleapis.com/v0/b/gemini-canvas-prod.appspot.com/o/us-central1-shared-chat-155621.appspot.com%2F0%2F2024-08-24T06%3A08%3A43.896Z%2FAsmi%20Verma_229309266_Resume.pdf?alt=media" target="_blank" class="inline-block mt-4 bg-pink-400 text-white px-6 py-2 rounded-full hover:bg-pink-500 transition duration-300 shadow-sm">Download Resume 📄</a>
+                </div>
+                <div class="md:w-1/3">
+                    <img src="https://placehold.co/400x400/FFB6C1/FFFFFF?text=Data+Viz" alt="Data Visualization Illustration" class="rounded-xl shadow-md transform rotate-3">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="ribbon font-cursive text-4xl">Projects</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project Card 1 -->
+                <div class="card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="https://www.google.com/imgres?q=nestle%20logo&imgurl=https%3A%2F%2Fsp-ao.shortpixel.ai%2Fclient%2Fto_webp%2Cq_lossless%2Cret_img%2Cw_1080%2Ch_675%2Fhttps%3A%2F%2Fgraphicdesignergeeks.com%2Fwp-content%2Fuploads%2F2024%2F02%2Fnestle-1080x628.jpg&imgrefurl=https%3A%2F%2Fgraphicdesignergeeks.com%2Fnestles-logo-design-impact-on-brand-identity%2F&docid=L2A-j20tt1DKkM&tbnid=wk4FG4lFonntaM&vet=12ahUKEwjl643Q5aKPAxW7xzgGHTUYNIUQM3oECB0QAA..i&w=1080&h=628&hcb=2&ved=2ahUKEwjl643Q5aKPAxW7xzgGHTUYNIUQM3oECB0QAA" alt="Nestle Stock Analysis" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-pink-600">Nestle Stock Analysis Dashboard</h3>
+                        <p class="text-gray-600 text-sm mb-4">An interactive Power BI dashboard to track stock price trends, volume, and moving averages for Nestle India.</p>
+                        <a href="https://github.com/Asmi-1701/Nestle-Analysis" target="_blank" class="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-pink-200 transition">View on GitHub 🎀</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/FFB6C1/FFFFFF?text=Sales+Dashboard" alt="Amazon Sales Dashboard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-pink-600">Amazon Sales Performance</h3>
+                        <p class="text-gray-600 text-sm mb-4">A Power BI dashboard analyzing Amazon sales data to evaluate regional performance, product categories, and seasonal trends.</p>
+                        <a href="https://github.com/Asmi-1701/Amazon-Sales-Dashboard" target="_blank" class="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-pink-200 transition">View on GitHub 🎀</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/FFC0CB/FFFFFF?text=K-Drama" alt="KDrama Recommender System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-pink-600">KDrama Recommender System</h3>
+                        <p class="text-gray-600 text-sm mb-4">A content-based recommender system for Korean dramas built as an interactive web application using Streamlit.</p>
+                        <a href="https://github.com/Asmi-1701/KDrama-Recommendation-System" target="_blank" class="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-pink-200 transition">View on GitHub 🎀</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="ribbon font-cursive text-4xl">Publications</h2>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
+                <div class="text-gray-700">
+                    <h3 class="font-bold text-xl text-pink-600">Exploring the Effectiveness of Fundus Image Enhancement for Diabetic Retinopathy Classification</h3>
+                    <p class="text-pink-400 font-semibold mt-1">21st IC2IT Conference, Thailand</p>
+                    <p class="mt-4">This study evaluates multiple preprocessing methods to improve image quality, contrast, and feature visibility, aiming to enhance model accuracy in detecting retinal abnormalities from over 10,000 fundus images.</p>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-90295-6_15" target="_blank" class="inline-block mt-4 bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-pink-200 transition">View Paper 🎀</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+             <div class="text-center mb-12">
+                <h2 class="ribbon font-cursive text-4xl">Let's Connect!</h2>
+            </div>
+            <p class="text-gray-600 max-w-lg mx-auto mb-8">I'm always excited to chat about data, new projects, or just make new friends. Drop me a line!</p>
+            <a href="mailto:asmiasmiverma@gmail.com" class="bg-pink-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-pink-600 transition duration-300 shadow-lg transform hover:scale-105">
+                Say Hello! 💌
+            </a>
+            <div class="flex justify-center space-x-6 mt-10 text-xl text-pink-400">
+                <a href="https://github.com/Asmi-1701" target="_blank" class="hover:text-pink-600 transition">GitHub</a>
+                <a href="#" class="hover:text-pink-600 transition">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-white/50">
+        <p class="text-gray-500 text-sm">Crafted with ♡ by Asmi Verma &copy; 2025</p>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on link click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
