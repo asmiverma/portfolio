@@ -74,7 +74,8 @@
       <section class="hero container reveal">
         <div class="hero-copy">
           <p class="eyebrow">
-            ASE Intern at Accenture | Data Engineer in Progress
+            ASE Intern at Accenture | Data Science Graduate | Data Engineering
+            and Analytics
           </p>
           <h1>
             Hi, I am
@@ -82,13 +83,36 @@
             and I turn messy data into stories that make business sense.
           </h1>
           <p class="subtitle">
-            B.Tech in Data Science at Manipal University Jaipur, currently
-            exploring Databricks, PySpark, SQL, machine learning, and data
-            visualization with a practical, collaborative mindset.
+            I am a Data Science graduate and ASE Intern at Accenture with a
+            growing focus on data engineering and analytics. I enjoy working
+            with structured and unstructured data to uncover patterns, build
+            practical solutions, and communicate insights clearly.
           </p>
           <div class="hero-actions">
             <a class="btn wiggle" href="#contact">Say Hi</a>
             <a class="btn btn-ghost" href="#projects">View Work</a>
+          </div>
+          <div class="social-row">
+            <a
+              class="btn btn-ghost btn-icon"
+              href="https://github.com/asmiverma"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit GitHub profile"
+            >
+              <span aria-hidden="true">⌘</span>
+              <span>GitHub</span>
+            </a>
+            <a
+              class="btn btn-ghost btn-icon"
+              href="https://www.linkedin.com/in/asmi-verma-34a305206"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit LinkedIn profile"
+            >
+              <span aria-hidden="true">in</span>
+              <span>LinkedIn</span>
+            </a>
           </div>
           <div class="hero-tags" aria-label="focus areas">
             <span>Databricks</span>
@@ -215,7 +239,10 @@
       <section id="projects" class="section container reveal">
         <div class="section-title-wrap">
           <p class="eyebrow">Projects</p>
-          <h2>Selected builds and analysis work</h2>
+          <h2>Selected data and machine learning projects</h2>
+          <p class="section-intro">
+            Focused on analysis, storytelling, and practical applications.
+          </p>
         </div>
 
         <div class="projects-grid">
@@ -226,10 +253,20 @@
             />
             <div>
               <h3>Nestle Stock Analysis Dashboard</h3>
+              <p class="project-subtitle">Financial Data Analysis | Power BI</p>
               <p>
-                Power BI dashboard tracking trend movement, volume behavior, and
-                moving average signals for investment interpretation.
+                Developed an interactive Power BI dashboard to analyze
+                historical stock trends, trading volume, and moving averages for
+                Nestle. The project focuses on identifying market behavior
+                patterns and presenting insights through clear visualizations.
               </p>
+              <ul class="project-points">
+                <li>Time-series analysis of price movement</li>
+                <li>Moving average indicators for trend interpretation</li>
+                <li>Volume analysis for market activity insights</li>
+                <li>Interactive dashboard for exploratory analysis</li>
+              </ul>
+              <p class="tools-line">Tools: Power BI, Excel</p>
               <span class="card-tag">Power BI</span>
               <a
                 href="https://github.com/Asmi-1701/Nestle-Analysis"
@@ -247,10 +284,22 @@
             />
             <div>
               <h3>Amazon Sales Performance</h3>
-              <p>
-                Interactive analytics dashboard exploring category performance,
-                regional opportunities, and seasonal sales trends.
+              <p class="project-subtitle">
+                Business Analytics | Data Visualization
               </p>
+              <p>
+                Built a Power BI dashboard to explore sales performance across
+                product categories, regions, and seasonal trends. The project
+                demonstrates how raw sales data can be transformed into
+                actionable insights for business decision-making.
+              </p>
+              <ul class="project-points">
+                <li>Regional sales distribution analysis</li>
+                <li>Product category performance comparison</li>
+                <li>Seasonal trend visualization</li>
+                <li>KPI dashboards for quick insights</li>
+              </ul>
+              <p class="tools-line">Tools: Power BI, Excel</p>
               <span class="card-tag">Dashboard Storytelling</span>
               <a
                 href="https://github.com/Asmi-1701/Amazon-Sales-Dashboard"
@@ -268,9 +317,21 @@
             />
             <div>
               <h3>KDrama Recommender System</h3>
+              <p class="project-subtitle">Machine Learning | NLP | Streamlit</p>
               <p>
-                Streamlit-based content recommendation app designed to suggest
-                similar shows using title features and metadata.
+                Developed a content-based recommendation system that suggests
+                similar Korean dramas using storyline and metadata signals. The
+                pipeline combines NLP and semantic similarity for stronger
+                ranking quality.
+              </p>
+              <ul class="project-points">
+                <li>TF-IDF text representation for baseline recommendations</li>
+                <li>Sentence Transformer embeddings for semantic similarity</li>
+                <li>Cosine similarity for ranking related shows</li>
+                <li>Streamlit app for interactive exploration</li>
+              </ul>
+              <p class="tools-line">
+                Tools: Python, scikit-learn, Sentence Transformers, Streamlit
               </p>
               <span class="card-tag">Machine Learning</span>
               <a
@@ -410,10 +471,17 @@
 
         <form
           class="contact-form card-surface"
-          action="#"
+          action="https://formsubmit.co/submissions@formsubmit.co"
           method="post"
           novalidate
         >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Portfolio Contact Submission"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
           <label>
             <input type="text" name="name" placeholder=" " required />
             <span>Your Name</span>
