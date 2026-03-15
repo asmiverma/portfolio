@@ -1,5 +1,7 @@
 const menuButton = document.getElementById("mobile-menu-button");
 const navLinks = document.getElementById("mobile-menu");
+const themeToggle = document.getElementById("theme-toggle");
+const loader = document.getElementById("loader");
 
 if (menuButton && navLinks) {
   menuButton.addEventListener("click", () => {
@@ -73,3 +75,60 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach((element) => observer.observe(element));
+
+if (themeToggle) {
+  const storageKey = "portfolio-theme";
+  const savedTheme = localStorage.getItem(storageKey);
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+  }
+
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem(
+      storageKey,
+      document.body.classList.contains("dark") ? "dark" : "light",
+    );
+  });
+}
+
+if (loader) {
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      loader.classList.add("hidden");
+    }, 260);
+  });
+}
+
+const testimonials = [...document.querySelectorAll(".testimonial")];
+const prevQuote = document.getElementById("prev-quote");
+const nextQuote = document.getElementById("next-quote");
+let quoteIndex = 0;
+
+const showQuote = (index) => {
+  testimonials.forEach((quote, i) => {
+    quote.classList.toggle("is-active", i === index);
+  });
+};
+
+if (testimonials.length > 1) {
+  if (prevQuote) {
+    prevQuote.addEventListener("click", () => {
+      quoteIndex = (quoteIndex - 1 + testimonials.length) % testimonials.length;
+      showQuote(quoteIndex);
+    });
+  }
+
+  if (nextQuote) {
+    nextQuote.addEventListener("click", () => {
+      quoteIndex = (quoteIndex + 1) % testimonials.length;
+      showQuote(quoteIndex);
+    });
+  }
+
+  setInterval(() => {
+    quoteIndex = (quoteIndex + 1) % testimonials.length;
+    showQuote(quoteIndex);
+  }, 5500);
+}

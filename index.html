@@ -5,37 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Asmi Verma, data science student focused on dashboards, analytics, and ML projects."
+      content="Asmi Verma portfolio - ASE Intern at Accenture, aspiring data engineer, and data science student with projects in SQL, PySpark, machine learning, and visualization."
     />
-    <title>Asmi Verma | Data Science Portfolio</title>
+    <title>Asmi Verma | Data Engineer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <div class="bg-shape shape-a" aria-hidden="true"></div>
-    <div class="bg-shape shape-b" aria-hidden="true"></div>
+    <div id="loader" class="loader-screen" aria-hidden="true">
+      <div class="loader-flower"></div>
+      <p>Brewing something pretty...</p>
+    </div>
+
+    <div class="texture" aria-hidden="true"></div>
+    <div class="floating floating-heart heart-a" aria-hidden="true"></div>
+    <div class="floating floating-heart heart-b" aria-hidden="true"></div>
+    <div class="floating floating-butterfly" aria-hidden="true">&#10047;</div>
 
     <header class="site-header">
       <div class="container nav-wrap">
-        <a href="#home" class="brand">Asmi Verma</a>
-        <button
-          id="mobile-menu-button"
-          class="menu-button"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
-        >
-          Menu
-        </button>
+        <a href="#home" class="brand" aria-label="Home">
+          <span class="logo-flower">✿</span>
+          <span>Asmi Verma</span>
+        </a>
+
+        <div class="header-controls">
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle color mode"
+            title="Toggle color mode"
+          >
+            <span class="sun">☀</span>
+            <span class="moon">☾</span>
+          </button>
+          <button
+            id="mobile-menu-button"
+            class="menu-button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
         <nav>
           <ul id="mobile-menu" class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact" class="btn btn-sm">Contact</a></li>
           </ul>
         </nav>
@@ -45,89 +73,164 @@
     <main id="home">
       <section class="hero container reveal">
         <div class="hero-copy">
-          <p class="eyebrow">Data Science Portfolio</p>
-          <h1>Turning raw data into clear business decisions.</h1>
+          <p class="eyebrow">
+            ASE Intern at Accenture | Data Engineer in Progress
+          </p>
+          <h1>
+            Hi, I am
+            <span class="script-name">Asmi</span>
+            and I turn messy data into stories that make business sense.
+          </h1>
           <p class="subtitle">
-            I am Asmi Verma, a Data Science undergraduate focused on dashboard
-            analytics, storytelling with data, and practical machine learning
-            solutions.
+            B.Tech in Data Science at Manipal University Jaipur, currently
+            exploring Databricks, PySpark, SQL, machine learning, and data
+            visualization with a practical, collaborative mindset.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="#projects">Explore Projects</a>
-            <a
-              class="btn btn-ghost"
-              href="assets/images/Asmi-Verma-Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Download Resume</a
-            >
+            <a class="btn wiggle" href="#contact">Say Hi</a>
+            <a class="btn btn-ghost" href="#projects">View Work</a>
+          </div>
+          <div class="hero-tags" aria-label="focus areas">
+            <span>Databricks</span>
+            <span>PySpark</span>
+            <span>SQL</span>
+            <span>Problem Solving</span>
           </div>
         </div>
-        <div class="hero-image-wrap">
+
+        <figure class="hero-polaroid">
           <img
             src="assets/images/asmi.jpg"
             alt="Portrait of Asmi Verma"
             class="hero-image"
           />
-          <div class="hero-badge">Open to internships</div>
-        </div>
+          <figcaption>Jaipur, Rajasthan, India</figcaption>
+        </figure>
       </section>
+
+      <svg
+        class="section-wave"
+        viewBox="0 0 1200 90"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0,40 C110,14 170,70 280,44 C390,19 450,66 560,45 C680,22 740,65 860,40 C970,19 1080,54 1200,30 L1200,90 L0,90 Z"
+        ></path>
+      </svg>
 
       <section id="about" class="section container reveal">
         <div class="section-title-wrap">
-          <p class="eyebrow">About</p>
-          <h2>Blending analysis with design</h2>
+          <p class="eyebrow">Summary</p>
+          <h2>A calm thinker with a builder mindset</h2>
         </div>
+
         <div class="about-grid card-surface">
-          <div>
+          <article>
             <p>
-              I have hands-on experience with business and financial datasets,
-              where I build dashboards, uncover trends, and communicate findings
-              in a way stakeholders can act on quickly.
+              I am a computer science graduate currently working at Accenture,
+              with strong interest in technology, structured problem solving,
+              and continuous learning.
             </p>
             <p>
-              My focus is creating work that is technically correct, visually
-              clear, and decision-ready. I enjoy solving problems across data
-              cleaning, modeling, and insight presentation.
+              My academic journey and project experience built a solid
+              foundation in SQL, data handling, and visualization. At work, I am
+              learning how engineering choices support real business outcomes.
             </p>
-            <h3>Core Toolkit</h3>
-            <ul class="skills-list">
-              <li>Power BI</li>
-              <li>Tableau</li>
-              <li>Python</li>
-              <li>SQL</li>
-              <li>Pandas</li>
-              <li>NumPy</li>
-              <li>Scikit-learn</li>
-              <li>DAX</li>
+            <p>
+              I value clear communication, teamwork, reliability, and ownership.
+              I enjoy collaborating with people who care about meaningful,
+              practical impact.
+            </p>
+            <p>
+              Always open to connecting with professionals in data and software.
+            </p>
+          </article>
+
+          <aside class="about-note">
+            <span class="sticker">about me</span>
+            <h3>Current Focus</h3>
+            <ul class="mini-list">
+              <li>Building stronger data engineering fundamentals</li>
+              <li>Turning analysis into clear visual narratives</li>
+              <li>Learning with consistency and intention</li>
             </ul>
-          </div>
-          <figure class="about-visual">
-            <img
-              src="assets/images/data_viz.jpeg"
-              alt="Data visualization artwork"
-            />
-          </figure>
+          </aside>
+        </div>
+      </section>
+
+      <svg
+        class="section-wave"
+        viewBox="0 0 1200 90"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0,35 C80,62 180,10 280,35 C390,63 470,12 560,36 C670,61 760,12 860,31 C960,48 1070,18 1200,45 L1200,90 L0,90 Z"
+        ></path>
+      </svg>
+
+      <section id="experience" class="section container reveal">
+        <div class="section-title-wrap">
+          <p class="eyebrow">Experience</p>
+          <h2>Leadership, internships, and global exposure</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item card-surface tilt-left">
+            <h3>IAESTE India LC MUJ</h3>
+            <p class="meta">Head Outgoing | Oct 2023 - Sep 2024 | Jaipur</p>
+            <p>
+              Led outgoing exchange operations, coordinated student mobility,
+              and managed communication across stakeholders.
+            </p>
+          </article>
+          <article class="timeline-item card-surface tilt-right">
+            <h3>Kasetsart University</h3>
+            <p class="meta">Research Intern | Jun 2024 - Aug 2024 | Thailand</p>
+            <p>
+              Worked on research initiatives and strengthened analytical and
+              interdisciplinary collaboration skills.
+            </p>
+          </article>
+          <article class="timeline-item card-surface tilt-left">
+            <h3>International Relations Council - MUJ</h3>
+            <p class="meta">Coordinator | Jan 2024 - Aug 2024 | Jaipur</p>
+            <p>
+              Supported campus internationalization initiatives and engagement
+              events with student communities.
+            </p>
+          </article>
+          <article class="timeline-item card-surface tilt-right">
+            <h3>Pledge A Smile</h3>
+            <p class="meta">Summer Intern | Jun 2023 - Jul 2023</p>
+            <p>
+              Contributed to social media marketing, content writing, and
+              donation-related campaigns.
+            </p>
+          </article>
         </div>
       </section>
 
       <section id="projects" class="section container reveal">
         <div class="section-title-wrap">
           <p class="eyebrow">Projects</p>
-          <h2>Selected Work</h2>
+          <h2>Selected builds and analysis work</h2>
         </div>
+
         <div class="projects-grid">
           <article class="project-card card-surface">
             <img
               src="assets/images/nestle_dashboard.png"
-              alt="Nestle stock analysis dashboard preview"
+              alt="Nestle stock analysis dashboard"
             />
             <div>
               <h3>Nestle Stock Analysis Dashboard</h3>
               <p>
-                Power BI dashboard to monitor stock trend movement, volume
-                behavior, and moving average signals for Nestle India.
+                Power BI dashboard tracking trend movement, volume behavior, and
+                moving average signals for investment interpretation.
               </p>
+              <span class="card-tag">Power BI</span>
               <a
                 href="https://github.com/Asmi-1701/Nestle-Analysis"
                 target="_blank"
@@ -136,17 +239,19 @@
               >
             </div>
           </article>
+
           <article class="project-card card-surface">
             <img
               src="assets/images/amazon_sales.png"
-              alt="Amazon sales performance dashboard preview"
+              alt="Amazon sales performance dashboard"
             />
             <div>
               <h3>Amazon Sales Performance</h3>
               <p>
-                Interactive dashboard analyzing regional growth, category
-                performance, and seasonal sales opportunities.
+                Interactive analytics dashboard exploring category performance,
+                regional opportunities, and seasonal sales trends.
               </p>
+              <span class="card-tag">Dashboard Storytelling</span>
               <a
                 href="https://github.com/Asmi-1701/Amazon-Sales-Dashboard"
                 target="_blank"
@@ -155,17 +260,19 @@
               >
             </div>
           </article>
+
           <article class="project-card card-surface">
             <img
               src="assets/images/kdrama_recommender.jpeg"
-              alt="KDrama recommendation app preview"
+              alt="KDrama recommendation app"
             />
             <div>
               <h3>KDrama Recommender System</h3>
               <p>
-                Content-based recommendation app built with Streamlit to help
-                users discover similar Korean dramas.
+                Streamlit-based content recommendation app designed to suggest
+                similar shows using title features and metadata.
               </p>
+              <span class="card-tag">Machine Learning</span>
               <a
                 href="https://github.com/Asmi-1701/KDrama-Recommendation-System"
                 target="_blank"
@@ -177,63 +284,161 @@
         </div>
       </section>
 
+      <section id="skills" class="section container reveal">
+        <div class="section-title-wrap">
+          <p class="eyebrow">Top Skills</p>
+          <h2>Tools I rely on and refine every day</h2>
+        </div>
+
+        <div class="skills-cloud" role="list" aria-label="skills">
+          <span role="listitem">SQL</span>
+          <span role="listitem">Spreadsheet Software</span>
+          <span role="listitem">Problem Solving</span>
+          <span role="listitem">PySpark</span>
+          <span role="listitem">Databricks</span>
+          <span role="listitem">Python</span>
+          <span role="listitem">Data Visualization</span>
+          <span role="listitem">Team Collaboration</span>
+        </div>
+      </section>
+
+      <section id="certifications" class="section container reveal">
+        <div class="section-title-wrap">
+          <p class="eyebrow">Certifications</p>
+          <h2>Learning pathway and completed programs</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="card-surface cert-card">
+            Business Analysis and Process Management
+          </article>
+          <article class="card-surface cert-card">
+            Share Data Through the Art of Visualization
+          </article>
+          <article class="card-surface cert-card">
+            Intro to ChatGPT and Generative AI
+          </article>
+          <article class="card-surface cert-card">
+            Introduction to Machine Learning with Python
+          </article>
+          <article class="card-surface cert-card">
+            Get Started With Tableau
+          </article>
+        </div>
+      </section>
+
       <section id="publications" class="section container reveal">
         <div class="section-title-wrap">
-          <p class="eyebrow">Publications</p>
-          <h2>Research Spotlight</h2>
+          <p class="eyebrow">Publication</p>
+          <h2>Research spotlight</h2>
         </div>
-        <article class="card-surface publication-card">
-          <h3>
-            Exploring the Effectiveness of Fundus Image Enhancement for Diabetic
-            Retinopathy Classification
-          </h3>
-          <p class="meta">21st IC2IT Conference, Thailand</p>
-          <p>
-            This research evaluates preprocessing techniques for retinal imaging
-            to improve contrast, feature visibility, and downstream diabetic
-            retinopathy classification accuracy.
-          </p>
-          <a
-            href="https://link.springer.com/chapter/10.1007/978-3-031-90295-6_15"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Read Publication</a
-          >
-        </article>
+
+        <div class="testimonial-wrap card-surface" aria-live="polite">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <div class="testimonial-track" id="testimonial-track">
+            <article class="testimonial is-active">
+              <h3>
+                Exploring the Effectiveness of Fundus Image Enhancement for
+                Diabetic Retinopathy Classification
+              </h3>
+              <p>
+                Study focused on improving retinal image quality and evaluating
+                enhancement techniques for stronger diabetic retinopathy
+                classification support.
+              </p>
+            </article>
+            <article class="testimonial">
+              <h3>Why this work matters</h3>
+              <p>
+                Better image clarity can increase model confidence and improve
+                decision support in healthcare screening workflows.
+              </p>
+            </article>
+          </div>
+          <div class="testimonial-controls">
+            <button
+              type="button"
+              class="tiny-btn"
+              id="prev-quote"
+              aria-label="Previous quote"
+            >
+              Prev
+            </button>
+            <button
+              type="button"
+              class="tiny-btn"
+              id="next-quote"
+              aria-label="Next quote"
+            >
+              Next
+            </button>
+          </div>
+        </div>
       </section>
 
       <section id="contact" class="section container contact reveal">
         <div class="section-title-wrap">
           <p class="eyebrow">Contact</p>
-          <h2>Let us build something useful.</h2>
+          <h2>Let us connect and build something impactful</h2>
         </div>
-        <p>
-          If you have an internship role, collaboration idea, or data problem to
-          solve, I would love to connect.
-        </p>
-        <div class="contact-actions">
-          <a class="btn" href="mailto:asmiasmiverma@gmail.com">Send Email</a>
-          <a
-            class="btn btn-ghost"
-            href="https://github.com/Asmi-1701"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-          <a
-            class="btn btn-ghost"
-            href="https://www.linkedin.com/in/asmi-verma-34a305206"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
+
+        <div class="contact-grid">
+          <article class="card-surface contact-card">
+            <p>Email</p>
+            <a href="mailto:asmiasmiverma@gmail.com">asmiasmiverma@gmail.com</a>
+          </article>
+          <article class="card-surface contact-card">
+            <p>LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/in/asmi-verma-34a305206"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.linkedin.com/in/asmi-verma-34a305206
+            </a>
+          </article>
+          <article class="card-surface contact-card">
+            <p>GitHub</p>
+            <a
+              href="https://github.com/asmiverma"
+              target="_blank"
+              rel="noopener noreferrer"
+              >github.com/asmiverma</a
+            >
+          </article>
         </div>
+
+        <form
+          class="contact-form card-surface"
+          action="#"
+          method="post"
+          novalidate
+        >
+          <label>
+            <input type="text" name="name" placeholder=" " required />
+            <span>Your Name</span>
+          </label>
+          <label>
+            <input type="email" name="email" placeholder=" " required />
+            <span>Your Email</span>
+          </label>
+          <label>
+            <textarea
+              name="message"
+              rows="4"
+              placeholder=" "
+              required
+            ></textarea>
+            <span>Your Message</span>
+          </label>
+          <button class="btn wiggle" type="submit">Send Message</button>
+        </form>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>Asmi Verma © 2026. Designed for clarity, performance, and growth.</p>
+        <p>Made with love, logic, and lots of coffee. Asmi Verma © 2026</p>
       </div>
     </footer>
 
