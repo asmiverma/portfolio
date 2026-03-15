@@ -189,10 +189,25 @@ body.dark .site-header {
   display: grid;
   place-content: center;
   box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.theme-toggle .sun,
+.theme-toggle .moon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  font-size: 1.05rem;
+  transition: opacity 0.2s ease;
+}
+
+.theme-toggle .sun {
+  opacity: 1;
 }
 
 .theme-toggle .moon {
-  position: absolute;
   opacity: 0;
 }
 
@@ -565,6 +580,7 @@ body.dark .section-wave {
 
 .project-card h3 {
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .project-card p {
