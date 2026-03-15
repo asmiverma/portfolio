@@ -592,10 +592,24 @@ body.dark .section-wave {
 
 .tools-line {
   margin-top: 0;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0;
   font-weight: 600;
   color: var(--text);
   font-size: 0.89rem;
+}
+
+.project-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
 }
 
 .card-tag {
@@ -605,8 +619,8 @@ body.dark .section-wave {
   background: rgba(255, 158, 181, 0.22);
   border: 1px solid rgba(196, 69, 125, 0.28);
   font-size: 0.8rem;
-  margin-bottom: 0.75rem;
-  transform: rotate(-2deg);
+  margin-bottom: 0;
+  transform: none;
 }
 
 .project-card a {
@@ -961,6 +975,18 @@ body.dark .section-wave {
 
   .project-card div {
     padding: 1.2rem 1.22rem 1.3rem;
+  }
+
+  .project-bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+
+  .project-actions {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
   }
 
   .skills-cloud {
